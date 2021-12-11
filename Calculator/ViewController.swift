@@ -162,7 +162,7 @@ class ViewController: UIViewController {
     
     
     @IBAction func buttonPlus(_ sender: Any) {
-        // run this code if no other operation has been run before
+        // run this code if no other mathnatical operation has been selected before, take the nnumber on screen as the new total and set up for the next current number
         if lastButton == "" || lastButton == "equals"{
         mainScreen.text = "+"
         total = currentNumber
@@ -374,7 +374,7 @@ func Adding(A: String, B: String) -> String{
     let intTwo = Float(B)
     
     guard intOne != nil && intTwo != nil else{
-        return "Unrecognised number"
+        return "Unrecognised num"
     }
     
     let total = intOne! + intTwo!
@@ -387,7 +387,7 @@ func Multiply(A: String, B: String) -> String{
     let intTwo = Float(B)
     
     guard intOne != nil && intTwo != nil else{
-        return "Unrecognised number"
+        return "Unrecognised num"
     }
     
     let total = intOne! * intTwo!
@@ -400,7 +400,7 @@ func Divide(A: String, B: String) -> String{
     let intTwo = Float(B)
     
     guard intOne != nil && intTwo != nil else{
-        return "Unrecognised number"
+        return "Unrecognised num"
     }
     
     let total = intOne! / intTwo!
@@ -413,7 +413,7 @@ func Subtract(A: String, B: String) -> String{
     let intTwo = Float(B)
     
     guard intOne != nil && intTwo != nil else{
-        return "Unrecognised number"
+        return "Unrecognised num"
     }
     
     let total = intOne! - intTwo!
